@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 2 - Acordeon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="acordeon">
+        <img
+          src="./imagens/download.png"
+          alt="ilustracao boneco jogando videogame"
+          class="ilustracao"
+        />
+
+        <div class="conteudo">
+          <h1>Dúvidas em Javascript</h1>
+          <ul class="items">
+            <li class="item ativo">
+              <h2 class="pergunta">O que é dom?</h2>
+
+              <p class="resposta">
+                DOCUMENT OBJECT MODEL: é um facilitador que existe dentro do seu
+                navegador, dentro do HTML5, para dar acesso aos elementos,
+                diretamente para o Javascript, sem ele teríamos muita
+                dificuldade para acessar os elementos da página. Cada página tem
+                sua própria árvore DOM
+              </p>
+            </li>
+
+            <li class="item">
+              <h2 class="pergunta">O que é hoisting?</h2>
+
+              <p class="resposta">
+                Todas as declarações de variáveis são movidas para o topo do
+                escopo seja ele global ou local ⬆️ isso é chamado de içamento
+                porque elas são içadas pro topo do escopo. Quando usada a
+                variável var ela é levada para cima do código e setada como
+                undefined. Porque o valor que é atribuído a ela, é deixado no
+                local aonde ela foi criada.
+              </p>
+            </li>
+
+            <li class="item">
+              <h2 class="pergunta">Qual a diferença entre == e ===?</h2>
+
+              <p class="resposta">
+                == compara valores.<br /><br />
+                === compara valores e tipos.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

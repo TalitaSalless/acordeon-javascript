@@ -1,0 +1,77 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.acordeon {
+  width: 655px;
+  min-height: 347px;
+  box-shadow: 0px 20px 20px -10px #00000040;
+  background-color: #fcfcfc;
+  display: flex;
+  align-items: center;
+  border-radius: 21px;
+  position: relative;
+  border: 2px solid yellow;
+}
+.acordeon .ilustracao {
+  position: absolute;
+  border-radius: 10%;
+  left: -50px;
+}
+.acordeon .conteudo {
+  width: 90%;
+  padding-left: 225px;
+}
+.acordeon .conteudo h1 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.acordeon .items {
+  list-style-type: none;
+}
+.acordeon .items .item {
+  cursor: pointer;
+  background-image: url(../imagens/icone-seta-fechada.png);
+  background-repeat: no-repeat;
+  background-position: top 8px right 0;
+  background-size: 12px;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+.acordeon .items .item:last-child {
+  border-bottom: none;
+}
+.acordeon .items .item .pergunta {
+  padding-bottom: 15px;
+  transition: 0.2 ease;
+  font-size: 17px;
+  width: 90%;
+  font-weight: 900;
+}
+.item .pergunta:hover {
+  color: #f47c57;
+}
+.resposta {
+  display: none;
+  padding-bottom: 15px;
+  font-size: 15px;
+  font-weight: 300;
+}
+/* ESTILOS DE ITEM DE ACORDEON ATIVO*/
+.acordeon .items .item.ativo h2 {
+  font-weight: 700;
+  font-size: 17px;
+}
+.acordeon .items .item.ativo .resposta {
+  display: block;
+}
+.acordeon .items .item.ativo {
+  background-image: url(../imagens/icone-seta-aberta.png);
+}
